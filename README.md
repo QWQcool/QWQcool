@@ -1,3 +1,5 @@
+---
+
 ```markdown
 <div align="center">
   <div style="background: linear-gradient(135deg, #4F46E5 0%, #EC4899 100%); padding: 30px 24px; border-radius: 16px;">
@@ -45,3 +47,5 @@
 
 </div>
 ```
+
+---
