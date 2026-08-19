@@ -1,6 +1,3 @@
----
-
-```markdown
 <div align="center">
   <div style="background: linear-gradient(135deg, #4F46E5 0%, #EC4899 100%); padding: 30px 24px; border-radius: 16px;">
     <h1 style="color: white; margin: 0; font-size: 52px; font-weight: 900;">Hi, I'm QWQcool 🔥</h1>
@@ -46,6 +43,3 @@
 *🔥 码农烧烤ing · Vibe Coding 大佐 · 持续烧烤中...*
 
 </div>
-```
-
----
