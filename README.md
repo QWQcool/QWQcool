@@ -1,22 +1,13 @@
 <div align="center">
   <div style="background: linear-gradient(135deg, #4F46E5 0%, #EC4899 100%); padding: 30px 24px; border-radius: 16px;">
     <h1 style="color: white; margin: 0; font-size: 52px; font-weight: 900;">Hi, I'm QWQcool 🔥</h1>
-    <p style="color: rgba(255,255,255,0.95); margin: 10px 0 0 0; font-size: 18px;">码农烧烤ing · Vibe Coding 大佐 ✌️</p>
+    <p style="color: rgba(255,255,255,0.95); margin: 10px 0 0 0; font-size: 18px;">码农烧烤ing · Vibe Coding  ✌️</p>
   </div>
 </div>
 
 <br>
 
 <div align="center">
-
-### 📊 GitHub Stats
-
-[![Followers](https://img.shields.io/github/followers/QWQcool?style=for-the-badge&logo=github&label=Followers&color=4F46E5)](https://github.com/QWQcool?tab=followers)
-[![Stars](https://img.shields.io/github/stars/QWQcool?style=for-the-badge&logo=github&label=Stars&color=EC4899)](https://github.com/QWQcool?tab=stars)
-[![Public Repos](https://img.shields.io/github/repos/QWQcool?style=for-the-badge&logo=github&label=Public%20Repos&color=10B981)](https://github.com/QWQcool?tab=repositories)
-[![Pull Requests](https://img.shields.io/github/issues-search?query=author%3AQWQcool%20type%3Apr&style=for-the-badge&logo=github&label=Pull%20Requests&color=F59E0B)](https://github.com/search?q=author%3AQWQcool+type%3Apr&type=pullrequests)
-
-<br>
 
 ### 🚀 Tech Stack
 
@@ -40,6 +31,6 @@
 
 <br>
 
-*🔥 码农烧烤ing · Vibe Coding 大佐 · 持续烧烤中...*
+*🔥 码农烧烤ing 持续烧烤中...*
 
 </div>
