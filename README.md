@@ -9,6 +9,8 @@
 
 <div align="center">
 
+[![Commits 90d](https://img.shields.io/badge/Commits_90d-UPDATE_ME-2f6fb2)](https://github.com/QWQcool?tab=overview&from=2026-06-09&to=2026-09-07)
+
 ### 🚀 Tech Stack
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)

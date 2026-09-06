@@ -1,0 +1,55 @@
+name: update-commit-stats
+
+# 每日刷新主页 README 的「最近 90 天提交」徽章数字
+# 放置位置：QWQcool/QWQcool 仓库 -> .github/workflows/commit-stats.yml
+# 前置条件：QWQcool/QWQcool 的 README.md 中已包含一行
+#   [![Commits 90d](https://img.shields.io/badge/Commits_90d-UPDATE_ME-2f6fb2)](https://github.com/QWQcool?tab=overview&from=YYYY-MM-DD&to=YYYY-MM-DD)
+# 首次部署后到 Actions 页手动 Run workflow 一次，之后每天 09:00 (UTC+8) 自动更新。
+
+on:
+  schedule:
+    - cron: "0 1 * * *"   # 01:00 UTC = 09:00 北京时间
+  workflow_dispatch:      # 支持手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Count commits in last 90 days
+        id: count
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          since=$(date -u -d '90 days ago' +%Y-%m-%d)
+          total=$(gh api \
+            -H "Accept: application/vnd.github+json" \
+            "search/commits?q=author:QWQcool+committer-date:%3E${since}&per_page=1" \
+            --jq '.total_count')
+          echo "total=${total}" >> "$GITHUB_OUTPUT"
+          echo "since=${since}" >> "$GITHUB_OUTPUT"
+          echo "近 90 天 commit 数: ${total} (since ${since})"
+
+      - name: Refresh badge number in README
+        env:
+          TOTAL: ${{ steps.count.outputs.total }}
+        run: |
+          sed -i "s/Commits_90d-UPDATE_ME/Commits_90d-${TOTAL}/" README.md
+          grep -o "Commits_90d-[0-9]*" README.md | head -1
+
+      - name: Commit and push
+        run: |
+          git config user.name "QWQcool"
+          git config user.email "1330494624@qq.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "无变化，跳过提交"
+          else
+            git commit -m "chore: refresh 90-day commit count badge"
+            git push
+          fi
