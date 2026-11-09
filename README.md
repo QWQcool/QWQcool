@@ -9,7 +9,7 @@
 
 <div align="center">
 
-[![Commits 90d](https://img.shields.io/badge/Commits_90d-985-2f6fb2)](https://github.com/QWQcool?tab=overview&from=2026-08-10&to=2026-11-08)
+[![Commits 90d](https://img.shields.io/badge/Commits_90d-997-2f6fb2)](https://github.com/QWQcool?tab=overview&from=2026-08-11&to=2026-11-09)
 
 ### 🚀 Tech Stack
 
